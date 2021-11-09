@@ -13,6 +13,7 @@ namespace EndConditions
     using Exiled.API.Features;
     using Exiled.Events.EventArgs;
     using NorthwoodLib.Pools;
+    using SerpentsHand.Patches;
 
     /// <summary>
     /// Contains methods which use events in <see cref="Exiled.Events.Handlers"/>.
@@ -105,6 +106,29 @@ namespace EndConditions
                     continue;
                 }
 
+                // SH Check
+                bool isSerpent = false;
+
+                try
+                {
+                    isSerpent = SerpentsHand.API.IsSerpent(ply);
+                }
+                catch
+                {
+                    Log.Debug("SH not installed");
+                }
+
+                if (isSerpent)
+                {
+                    yield return "serpentshand";
+                    continue;
+                }
+
+                // NPC Check
+                if (ply.SessionVariables.ContainsKey("IsNPC") && plugin.Config.IgnoreNpcs)
+                    continue;
+
+                // 035 Check
                 if (ply.SessionVariables.ContainsKey("IsScp035"))
                 {
                     yield return "scp035";
