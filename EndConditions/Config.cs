@@ -52,7 +52,7 @@ namespace EndConditions
         /// </summary>
         [Description("Whether tutorials will be ignored while checking if the round should end.")]
         public bool IgnoreTutorials { get; set; } = true;
-        
+
         /// <summary>
         /// Gets or sets a value indicating whether NPCs will be ignored while checking if the round should end.
         /// </summary>
