@@ -42,6 +42,13 @@ jobs:
       - name: Extract Refs
         run: ./7zip.exe e References.zip -oEndConditions/lib/ -r -y
 
+      - name: Download Serpents Hand
+        uses: carlosperate/download-file-action@v1.0.3
+        with:
+          file-url: 'https://github.com/Exiled-Team/SerpentsHand/releases/latest/download/SerpentsHand.dll'
+          file-name: 'SerpentsHand.dll'
+          location: EndConditions/lib/
+
       - name: Build
         env:
           EXILED_REFERENCES: ${{ env.EXILED_REFERENCES_PATH }}
