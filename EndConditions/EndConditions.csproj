@@ -6,14 +6,14 @@
       <AssemblyName>EndConditions</AssemblyName>
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
       <Authors>Build</Authors>
-      <Version>3.2.0</Version>
+      <Version>3.3.0</Version>
       <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
       <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="EXILED" Version="3.7.1" />
+      <PackageReference Include="EXILED" Version="4.0.0" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
       <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
       <PackageReference Include="YamlDotNet" Version="9.1.0" />
