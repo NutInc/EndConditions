@@ -46,7 +46,7 @@ jobs:
         uses: carlosperate/download-file-action@v1.0.3
         with:
           file-url: 'https://github.com/Exiled-Team/SerpentsHand/releases/latest/download/SerpentsHand.dll'
-          file-name: 'SerpentsHand.dll'
+          file-name: 'SerpentsHand'
           location: EndConditions/lib/
 
       - name: Build
