@@ -30,7 +30,7 @@
       <Reference Include="CommandSystem.Core" HintPath="$(EXILED_References)\CommandSystem.Core.dll" Private="false" />
       <Reference Include="Mirror" HintPath="$(EXILED_References)\Mirror.dll" Private="false" />
       <Reference Include="NorthwoodLib" HintPath="$(EXILED_References)\NorthwoodLib.dll" Private="false" />
-      <Reference Include="SerpentsHand, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Reference Include="SerpentsHand, Version=4.1.6.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>$(EXILED_References)\SerpentsHand.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.CoreModule" HintPath="$(EXILED_References)\UnityEngine.CoreModule.dll" Private="false" />
